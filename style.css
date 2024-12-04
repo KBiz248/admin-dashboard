@@ -3,8 +3,9 @@
 }
 
 #main-container {
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 50px 50px;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar content";
@@ -13,16 +14,20 @@
 
 #sidebar-container {
     grid-area: sidebar;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.507);
 }
 
 #header-container {
     grid-area: header;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.527);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #content-container {
     grid-area: content;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.541);
+    grid-template-columns: 3fr 1fr;
 }
+
 
