@@ -1,3 +1,28 @@
 .grid {
     display: grid;
 }
+
+#main-container {
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content";
+
+}
+
+#sidebar-container {
+    grid-area: sidebar;
+    background-color: red;
+}
+
+#header-container {
+    grid-area: header;
+    background-color: yellow;
+}
+
+#content-container {
+    grid-area: content;
+    background-color: green;
+}
+
