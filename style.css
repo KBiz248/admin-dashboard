@@ -22,7 +22,46 @@
     background-color: rgba(255, 255, 0, 0.527);
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "search user"
+    "user-greeting user-buttons";
 }
+
+#search{
+    grid-area: search;
+}
+
+#user {
+    grid-area: user;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#user-greeting {
+    grid-area: user-greeting;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "user-greeting-image user-greeting-greeting"
+    "user-greeting-image user-greeting-name";
+}
+
+#user-greeting-image {
+    grid-area: user-greeting-image;
+}
+
+#user-greeting-greeting {
+    grid-area: user-greeting-greeting;
+}
+
+#user-greeting-name {
+    grid-area: user-greeting-name;
+}
+
+#user-buttons {
+    grid-area: user-buttons;
+}
+
+
 
 #content-container {
     grid-area: content;
@@ -30,4 +69,6 @@
     grid-template-columns: 3fr 1fr;
 }
 
-
+/* div{ 
+    border: 1px solid black;
+}*/
