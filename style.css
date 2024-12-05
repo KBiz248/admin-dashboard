@@ -14,12 +14,13 @@
 
 #sidebar-container {
     grid-area: sidebar;
-    background-color: rgba(255, 0, 0, 0.507);
+    background-color: var(--accent-color);
+    color: var(--navigation-text-color)
 }
 
 #header-container {
     grid-area: header;
-    background-color: rgba(255, 255, 0, 0.527);
+    background-color: var(--main-color);
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -61,22 +62,30 @@
     grid-area: user-buttons;
 }
 
+button { 
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: var(--navigation-text-color);
+} 
+
 
 
 #content-container {
     grid-area: content;
-    background-color: rgba(0, 128, 0, 0.541);
+    background-color: var(--background-color);
     grid-template-columns: 3fr 1fr;
 }
 
-/* div{ 
-    border: 1px solid black;
-}*/
+.card {
+    background-color: var(--main-color);
+}
 
 
 :root {
     --main-color: white;
-    --accent-color: white;
+    --accent-color: blue;
     --background-color: gray;
     --shadow-color: gray;
     --navigation-text-color: white;
