@@ -72,3 +72,12 @@
 /* div{ 
     border: 1px solid black;
 }*/
+
+
+:root {
+    --main-color: white;
+    --accent-color: white;
+    --background-color: gray;
+    --shadow-color: gray;
+    --navigation-text-color: white;
+}
