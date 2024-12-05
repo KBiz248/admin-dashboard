@@ -97,6 +97,7 @@ button {
     width: 200px;
     box-shadow: 5px 5px 5px var(--shadow-color);
     border-radius: 10px;
+    border-left: solid 5px var(--edge-color);
     margin: 15px;
 }
 
@@ -106,6 +107,7 @@ button {
 
 .side-card {
     background-color: var(--main-color);
+    border-radius: 10px;
     box-shadow: 5px 5px 5px var(--shadow-color);
     margin-right: 20px;
 }
@@ -117,5 +119,26 @@ button {
     --background-color: #cbd5e1; /* slate 300 */
     --shadow-color: #64748b; /* slate 500 */
     --navigation-text-color: white;
+    --edge-color: #fbbf24; /* amber 400 */
 }
 
+svg {
+    width: 16px;
+    fill: var(--main-color);
+    padding-right: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+li {
+    list-style-image: url(./communities.svg);
+    fill: var(--main-color);
+    height: 16px;
+}
+
+ul::marker {
+    fill: var(--main-color);
+}
