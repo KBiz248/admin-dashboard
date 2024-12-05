@@ -1,3 +1,5 @@
+
+
 .grid {
     display: grid;
 }
@@ -21,6 +23,7 @@
 #header-container {
     grid-area: header;
     background-color: var(--main-color);
+    box-shadow: 20px 20px 5px var(--shadow-color);
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -76,6 +79,7 @@ button {
     grid-area: content-container;
     background-color: var(--background-color);
     grid-template-columns: 3fr 1fr;
+    
 }
 
 #content-left-side {
@@ -91,10 +95,19 @@ button {
     background-color: var(--main-color);
     height: 150px;
     width: 200px;
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    border-radius: 10px;
+    margin: 15px;
 }
 
 #content-right-side {
     grid-template-rows: 50px 1fr 50px 1fr;
+}
+
+.side-card {
+    background-color: var(--main-color);
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    margin-right: 20px;
 }
 
 
