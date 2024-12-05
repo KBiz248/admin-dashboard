@@ -8,7 +8,7 @@
     grid-template-rows: 1fr 5fr;
     grid-template-areas: 
     "sidebar header"
-    "sidebar content";
+    "sidebar content-container";
 
 }
 
@@ -73,13 +73,28 @@ button {
 
 
 #content-container {
-    grid-area: content;
+    grid-area: content-container;
     background-color: var(--background-color);
     grid-template-columns: 3fr 1fr;
 }
 
+#content-left-side {
+    grid-template-rows: 50px 1fr;
+}
+
+#card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+}
+
 .card {
     background-color: var(--main-color);
+    height: 150px;
+    width: 200px;
+}
+
+#content-right-side {
+    grid-template-rows: 50px 1fr 50px 1fr;
 }
 
 
