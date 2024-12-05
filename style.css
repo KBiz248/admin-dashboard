@@ -85,8 +85,9 @@ button {
 
 :root {
     --main-color: white;
-    --accent-color: blue;
-    --background-color: gray;
-    --shadow-color: gray;
+    --accent-color: #0284c7; /* sky 600 */
+    --background-color: #cbd5e1; /* slate 300 */
+    --shadow-color: #64748b; /* slate 500 */
     --navigation-text-color: white;
 }
+
