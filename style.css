@@ -14,7 +14,6 @@
     grid-template-areas: 
     "sidebar header"
     "sidebar content-container";    
-
 }
 
 #sidebar-container {
@@ -105,6 +104,59 @@ button {
     border-radius: 10px;
     border-left: solid 5px var(--edge-color);
     margin: 15px;
+    /* display: grid;
+    grid-template-columns: 1fr 25px 25px 25px;
+    grid-template-rows: 25px 1fr 25px;
+    grid-template-areas:
+    "title . . ."
+    "description description description description"
+    ". card-button card-button card-button";
+    overflow: scroll; */
+}
+
+/* .title {
+    grid-area: title;
+}
+
+.description {
+    grid-area: description;
+    overflow:scroll;
+}
+
+.card-button {
+    grid-area: card-button;
+} */
+
+#card2 {
+    display: grid;
+    grid-template-columns: 1fr 25px 25px 25px;
+    grid-template-rows: 25px 1fr 25px;
+    grid-template-areas:
+    "title2 . . ."
+    "description2 description2 description2 description2"
+    ". card-button1 card-button2 card-button3";
+    
+}
+
+#title2 {
+    grid-area: title2;
+}
+
+#description2 {
+    grid-area: description2;
+    /* overflow: auto; */
+}
+
+#card-button1 {
+    grid-area: card-button1;
+}
+
+#card-button2 {
+    grid-area: card-button2;
+}
+
+#card-button3 {
+    grid-area: card-button3;
 }
 
 #content-right-side {
