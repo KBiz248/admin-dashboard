@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: eagle-lake;
+    src: url(./EagleLake-Regular.ttf);
+}
 
 .grid {
     display: grid;
@@ -17,7 +20,10 @@
 #sidebar-container {
     grid-area: sidebar;
     background-color: var(--accent-color);
-    color: var(--navigation-text-color)
+    color: var(--navigation-text-color);
+    font-family: eagle-lake;
+    padding-right: 20px;
+    align-content: start;
 }
 
 #header-container {
@@ -123,14 +129,34 @@ button {
 }
 
 svg {
-    width: 16px;
+    height: 33px;
     fill: var(--main-color);
-    padding-right: 10px;
+    padding-right: 20px;
+}
+
+h1 svg {
+    height: 60px;
+    margin-left: 20px;
+}
+
+h1 {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 li {
     list-style: none;
+    font-size: larger;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
+
+
 
 /*
 li {
