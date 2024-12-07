@@ -107,79 +107,14 @@ button {
     display: grid;
     grid-template-columns: 1fr 25px 25px 25px;
     grid-template-rows: 25px 1fr 25px;
-    /* grid-template-areas:
-    "title . . ."
-    "description description description description"
-    ". card-button1 card-button2 card-button3"; */
-    overflow: auto;
-}
-
-/* .card:nth-child(1) {
-    --grid-area: title;
-    grid-area: var(--grid-area);
-}
-
-.card:nth-child(2) {
-    --grid-area: description;
-    grid-area: var(--grid-area);
-}
-
-.card:nth-child(3) {
-    grid-area: card-button1;
-}
-
-.card:nth-child(4) {
-    grid-area: card-button2;
-}
-
-.card:nth-child(5) {
-    grid-area: card-button3;
-}  */
-
-/* .title {
-    grid-area: title;
-}
-
-.description {
-    grid-area: description;
-    overflow:scroll;
-}
-
-.card-button {
-    grid-area: card-button;
-} */
-
-/* #card2 {
-    display: grid;
-    grid-template-columns: 1fr 25px 25px 25px;
-    grid-template-rows: 25px 1fr 25px;
-    grid-template-areas:
-    "title2 . . ."
-    "description2 description2 description2 description2"
-    ". card-button1 card-button2 card-button3";
     
-}
+    overflow: auto;
 
-#title2 {
-    grid-area: title2;
-}
+} 
 
-#description2 {
-    grid-area: description2;
-    overflow: auto; 
-}
 
-#card-button1 {
-    grid-area: card-button1;
-}
 
-#card-button2 {
-    grid-area: card-button2;
-}
 
-#card-button3 {
-    grid-area: card-button3;
-} */
 
 #content-right-side {
     grid-template-rows: 50px 1fr 50px 1fr;
