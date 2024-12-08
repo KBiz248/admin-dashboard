@@ -26,10 +26,8 @@
 }
 
 #header-container {
+    padding-left: 50px;
     grid-area: header;
-    background-color: var(--main-color);
-    box-shadow: 0px 5px 5px var(--shadow-color);
-    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "search user"
@@ -37,12 +35,25 @@
 }
 
 #search{
+    padding-top: 25px;
     grid-area: search;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+#search>svg {
+    fill: black;
+}
+
+input {
+    height: 30px;
+    border-radius: 15px;
 }
 
 #user {
+    padding-top: 25px;
     grid-area: user;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #user>img {
@@ -81,6 +92,7 @@
 
 #user-buttons {
     grid-area: user-buttons;
+    
 }
 
 button { 
