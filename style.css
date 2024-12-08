@@ -45,6 +45,11 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#user>img {
+    height: 50px;
+    border-radius: 50%;
+}
+
 #user-greeting {
     grid-area: user-greeting;
     grid-template-columns: 50px 1fr;
@@ -56,6 +61,14 @@
 
 #user-greeting-image {
     grid-area: user-greeting-image;
+    
+    
+
+}
+
+#user-greeting-image>img{
+    height: 100px;
+    border-radius: 50%;
 }
 
 #user-greeting-greeting {
@@ -92,32 +105,36 @@ button {
 }
 
 #card-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     
 }
 
 .card {
     background-color: var(--main-color);
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 420px;
     box-shadow: 5px 5px 5px var(--shadow-color);
     border-radius: 10px;
     border-left: solid 5px var(--edge-color);
     margin: 15px;
     display: grid;
-    grid-template-columns: 1fr 25px 25px 25px;
-    grid-template-rows: 25px 1fr 25px;
+    grid-template-columns: 1fr 35px 35px 35px;
+    grid-template-rows: 25px 1fr 35px;
     
-    overflow: auto;
+    
 
 } 
 
-
+.card-button>svg {
+    height: 25px;
+    fill: black;
+}
 
 
 
 #content-right-side {
     grid-template-rows: 50px 1fr 50px 1fr;
+    margin-left: 10px;
 }
 
 .side-card {
