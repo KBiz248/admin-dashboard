@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 @font-face {
     font-family: eagle-lake;
     src: url(./EagleLake-Regular.ttf);
@@ -26,6 +30,7 @@
 }
 
 #header-container {
+    box-shadow: 0px 5px 5px var(--shadow-color);
     padding-left: 50px;
     grid-area: header;
     grid-template-rows: 1fr 1fr;
@@ -48,7 +53,15 @@
 
 input {
     height: 30px;
+    padding: 0px 15px;
+    font-size: large;
     border-radius: 15px;
+    border: none;
+    background-color: var(--background-color);
+}
+
+input:focus {
+    outline:none;
 }
 
 #user {
