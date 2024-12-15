@@ -29,6 +29,7 @@
     padding-left: 50px;
     grid-area: header;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-areas: 
     "search user"
     "user-greeting user-buttons";
@@ -92,14 +93,20 @@ input {
 
 #user-buttons {
     grid-area: user-buttons;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 button { 
     background-color: var(--accent-color);
     border: none;
-    border-radius: 10px;
+    border-radius: 22.5px;
+    font-size: large;
+    font-weight: bold;
     padding: 12px;
+    width: 110px;
     color: var(--navigation-text-color);
 } 
 
