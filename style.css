@@ -154,6 +154,8 @@ button {
     background-color: var(--background-color);
     grid-template-columns: 3fr 1fr;
     z-index: -1;
+    padding-bottom: 50px;
+    padding-top: 25px;
 }
 
 #content-left-side {
@@ -164,6 +166,7 @@ button {
 #card-container {
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     /* justify-items: center; */
+    gap: 30px;
 }
 
 .card {
@@ -174,15 +177,14 @@ button {
     border-radius: 10px;
     border-left: solid 10px var(--edge-color);
     /* margin: 15px 15px 15px 0px; */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     /* margin-right: 10px; unnecessary b/c of the minimum value in minmax() in #card-container*/ 
     padding: 25px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 35px 35px 35px;
     grid-template-rows: 25px 1fr 35px;
-    
-    
+    /* gap: 30px; */
 
 } 
 
@@ -203,9 +205,10 @@ button {
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--shadow-color);
     margin-right: 20px;
+    padding: 25px;
     /* margin-top: 15px; */
+    /* justify-content: center; */
 }
-
 
 :root {
     --main-color: white;
