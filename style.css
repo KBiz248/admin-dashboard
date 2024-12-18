@@ -1,7 +1,9 @@
-
-
 body {
     margin: 0px;
+}
+
+p{
+    margin:0px;
 }
 
 @font-face {
@@ -41,7 +43,7 @@ body {
     /* box-sizing: border-box; */
     box-shadow: 0px 5px 5px var(--shadow-color);
     padding-left: 50px;
-    /* padding-bottom: 10px; */
+    padding-bottom: 10px;
     grid-area: header;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 2fr;
@@ -93,7 +95,7 @@ input:focus {
 #user-greeting {
     grid-area: user-greeting;
     grid-template-columns: 120px 1fr;
-    grid-template-rows: 2fr 4fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "user-greeting-image user-greeting-greeting"
     "user-greeting-image user-greeting-name";
@@ -173,6 +175,7 @@ button {
 
 .card {
     background-color: var(--main-color);
+    font-size: large;
     height: 250px;
     width: 420px;
     box-shadow: 5px 5px 5px var(--shadow-color);
@@ -192,7 +195,7 @@ button {
 
 .project-title {
     font-weight: bold;
-    font-size: large;
+    font-size: larger;
 }
 
 .card-button>svg {
@@ -212,9 +215,23 @@ button {
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--shadow-color);
     margin-right: 20px;
-    padding: 25px;
+    padding: 35px 25px 25px 25px;
+    font-size: 0.9rem;
     /* margin-top: 15px; */
     /* justify-content: center; */
+}
+
+.line{
+    border: 1px solid var(--background-color);
+    height: 2px;
+    box-sizing: border-box;
+    
+
+}
+
+.announcement-title{
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 :root {
