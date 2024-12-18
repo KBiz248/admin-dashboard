@@ -36,8 +36,10 @@ body {
 }
 
 #header-container {
+    /* box-sizing: border-box; */
     box-shadow: 0px 5px 5px var(--shadow-color);
     padding-left: 50px;
+    /* padding-bottom: 10px; */
     grid-area: header;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 2fr;
@@ -89,7 +91,7 @@ input:focus {
 #user-greeting {
     grid-area: user-greeting;
     grid-template-columns: 120px 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 2fr 4fr;
     grid-template-areas:
     "user-greeting-image user-greeting-greeting"
     "user-greeting-image user-greeting-name";
@@ -111,14 +113,19 @@ input:focus {
     grid-area: user-greeting-greeting;
     font-weight: bold;
     font-size: large;
+    align-self: center; /* not sure why its align instead of justify */
+
+    /* padding:10px; also messes up header area */
     /* margin: 15px; this makes the whole header area huge for some reason  */
 }
 
 #user-greeting-name {
     grid-area: user-greeting-name;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
-    
+    /* box-sizing: border-box; */
+    align-self: center;
+    width: max-content; /* prevents username from wrapping onto another line, thus increasing the height of the header */
 }
 
 #user-buttons {
