@@ -190,6 +190,11 @@ button {
 
 } 
 
+.project-title {
+    font-weight: bold;
+    font-size: large;
+}
+
 .card-button>svg {
     height: 25px;
     fill: black;
