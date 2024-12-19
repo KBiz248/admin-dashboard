@@ -241,6 +241,7 @@ button {
     --shadow-color: #64748b; /* slate 500 */
     --navigation-text-color: white;
     --edge-color: #fbbf24; /* amber 400 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 svg {
