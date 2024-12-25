@@ -16,3 +16,16 @@ for(let i = 0; i < cards.length; i++){
     children[4].style.gridColumn = '4 / 5';
 }
 
+const trending = document.getElementById('trending-card').children;
+
+console.log(trending);
+
+for (let i = 0; i < trending.length; i++){
+    trending[i].children[0].style.gridArea = '1 / 1 / 3 / 2';
+    trending[i].children[0].style.height = '50px';
+    trending[i].children[0].style.borderRadius = '50%';
+    trending[i].children[0].style.marginRight = '16px';
+    trending[i].children[1].style.gridArea = '1 / 2 / 2 / 3';
+    trending[i].children[2].style.gridArea = '2 / 2 / 3 / 3';
+}
+

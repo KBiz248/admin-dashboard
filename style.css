@@ -219,6 +219,22 @@ button {
     font-size: 0.9rem;
     /* margin-top: 15px; */
     /* justify-content: center; */
+
+    /* grid-template-rows: repeat(auto-fit, 1fr); */
+}
+
+#trending-card>div{
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 25px 25px;
+    
+}
+
+#side-card>div>img{
+    height: inherit;
+}
+
+.trending-description{
+    color: var(--shadow-color)
 }
 
 .line{
