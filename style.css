@@ -91,7 +91,7 @@ a {
     padding-left: 50px;
     padding-bottom: 10px;
     grid-area: header;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; /* this caused problems earlier. See explanation in #user-greeting-greeting */
     grid-template-columns: 3fr 2fr;
     grid-template-areas: 
     "search user"
@@ -135,6 +135,12 @@ input:focus {
     grid-area: user-greeting;
     grid-template-columns: 120px 1fr;
     grid-template-rows: 1fr 1fr;
+    /* 
+    previously, this was set to 
+    grid-template-rows: 1fr 4fr;
+    this caused huge problems
+    see explanation in #user-greeting-greeting
+    */
     grid-template-areas:
     "user-greeting-image user-greeting-greeting"
     "user-greeting-image user-greeting-name";
@@ -157,7 +163,19 @@ input:focus {
 
     /* margin: 15px; this makes the whole header area huge for some reason [not anymore, for some reason]  */
     /* padding:10px; also messes up header area  [not anymore, for some reason]  */
-    /* I swear, the above two lines were true at some point, and I can't figure out what actually changed */
+    
+    /* 
+    SOLVED - using 'margin: 15px' to explain below
+    When I added the 15px margin, it added a total of 30 extra px to the box (15 on top and 15 on bottom), thus changing its total height to 51px.
+    Since the second row of #user-greeting has to be four times larger than the first row (see #user-greeting), the total height of the second row then became 204px.
+    The total height of both was 255 px.
+    Because of the grid-template-rows in #header-container, that meant that the top row of the #header-container ALSO had to have a total height of 255px.
+    All of this combined to make the header grow massively in size, all because of a 15px margin.
+
+    Once I changed #user-greeting to 'grid-template-rows: 1fr 1fr', changing the margin/padding here stopped having such a drastic effect.
+    
+    TL;DR - be wary of fractional units
+    */
 }
 
 #user-greeting-name {
