@@ -11,14 +11,24 @@ p{
     src: url(./EagleLake-Regular.ttf);
 }
 
-.black {
-    fill:black;
-    padding:0;
-    height: 25px;
+:root {
+    --main-color: white;
+    --accent-color: #0284c7; /* sky 600 */
+    --background-color: #cbd5e1; /* slate 300 */
+    --shadow-color: #64748b; /* slate 500 */
+    --navigation-text-color: white;
+    --edge-color: #fbbf24; /* amber 400 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .grid {
     display: grid;
+}
+
+.black {
+    fill:black;
+    padding:0;
+    height: 25px;
 }
 
 #main-container {
@@ -30,6 +40,8 @@ p{
     "sidebar content-container";    
 }
 
+/* SIDEBAR AREA */
+
 #sidebar-container {
     grid-area: sidebar;
     background-color: var(--accent-color);
@@ -37,231 +49,6 @@ p{
     font-family: eagle-lake;
     padding-right: 20px;
     align-content: start;
-}
-
-#header-container {
-    /* box-sizing: border-box; */
-    box-shadow: 0px 5px 5px var(--shadow-color);
-    padding-left: 50px;
-    padding-bottom: 10px;
-    grid-area: header;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 3fr 2fr;
-    grid-template-areas: 
-    "search user"
-    "user-greeting user-buttons";
-}
-
-#search{
-    /* padding-top: 25px; */
-    grid-area: search;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    align-items: center;
-}
-
-#search>svg {
-    fill: black;
-}
-
-input {
-    height: 30px;
-    padding: 0px 15px;
-    font-size: large;
-    border-radius: 15px;
-    border: none;
-    background-color: var(--background-color);
-}
-
-input:focus {
-    outline:none;
-}
-
-#user {
-    /* padding-top: 25px; */
-    grid-area: user;
-    grid-template-columns: 1fr 50px 75px 2fr;
-    font-size: large;
-    font-weight: bold;
-    align-items: center;
-}
-
-
-#user>img {
-    height: 50px;
-    border-radius: 50%;
-}
-
-#user-greeting {
-    grid-area: user-greeting;
-    grid-template-columns: 120px 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "user-greeting-image user-greeting-greeting"
-    "user-greeting-image user-greeting-name";
-}
-
-#user-greeting-image {
-    grid-area: user-greeting-image;
-    
-    
-
-}
-
-#user-greeting-image>img{
-    height: 90px;
-    border-radius: 50%;
-}
-
-#user-greeting-greeting {
-    grid-area: user-greeting-greeting;
-    font-weight: bold;
-    font-size: large;
-    align-self: center; /* not sure why its align instead of justify */
-
-    /* padding:10px; also messes up header area */
-    /* margin: 15px; this makes the whole header area huge for some reason  */
-}
-
-#user-greeting-name {
-    grid-area: user-greeting-name;
-    font-size: xx-large;
-    font-weight: bold;
-    /* box-sizing: border-box; */
-    align-self: center;
-    width: max-content; /* prevents username from wrapping onto another line, thus increasing the height of the header */
-}
-
-#user-buttons {
-    grid-area: user-buttons;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-button { 
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 22.5px;
-    font-size: large;
-    font-weight: bold;
-    padding: 12px;
-    width: 110px;
-    color: var(--navigation-text-color);
-} 
-
-
-
-#content-container {
-    grid-area: content-container;
-    background-color: var(--background-color);
-    grid-template-columns: 3fr 1fr;
-    z-index: -1;
-    padding-bottom: 50px;
-    padding-top: 25px;
-}
-
-#content-left-side {
-    grid-template-rows: 50px 1fr;
-    padding-left: 40px;
-}
-
-#card-container {
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-    /* justify-items: center; */
-    gap: 30px;
-}
-
-.card {
-    background-color: var(--main-color);
-    font-size: large;
-    height: 250px;
-    width: 420px;
-    box-shadow: 5px 5px 5px var(--shadow-color);
-    border-radius: 10px;
-    border-left: solid 10px var(--edge-color);
-    /* margin: 15px 15px 15px 0px; */
-    /* margin-bottom: 30px; */
-    /* margin-right: 10px; unnecessary b/c of the minimum value in minmax() in #card-container*/ 
-    padding: 25px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 50px 50px 50px;
-    grid-template-rows: 25px 1fr 35px;
-    /* gap: 30px; */
-
-} 
-
-.project-title {
-    font-weight: bold;
-    font-size: larger;
-}
-
-.card-button>svg {
-    height: 25px;
-    fill: black;
-}
-
-
-
-#content-right-side {
-    grid-template-rows: 50px 1fr 50px 1fr;
-    /* margin-left: 10px; */
-}
-
-.side-card {
-    background-color: var(--main-color);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px var(--shadow-color);
-    margin-right: 20px;
-    padding: 35px 25px 25px 25px;
-    font-size: 0.9rem;
-    /* margin-top: 15px; */
-    /* justify-content: center; */
-
-    /* grid-template-rows: repeat(auto-fit, 1fr); */
-}
-
-#trending-card>div{
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 25px 25px;
-    
-}
-
-#side-card>div>img{
-    height: inherit;
-}
-
-.trending-description{
-    color: var(--shadow-color)
-}
-
-.line{
-    border: 1px solid var(--background-color);
-    height: 2px;
-    box-sizing: border-box;
-    
-
-}
-
-.announcement-title{
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.announcement {
-    color: var(--shadow-color);
-}
-
-:root {
-    --main-color: white;
-    --accent-color: #0284c7; /* sky 600 */
-    --background-color: #cbd5e1; /* slate 300 */
-    --shadow-color: #64748b; /* slate 500 */
-    --navigation-text-color: white;
-    --edge-color: #fbbf24; /* amber 400 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 svg {
@@ -297,13 +84,212 @@ a {
     text-decoration: none;
 }
 
-/*
-li {
-    list-style-image: url(./communities.svg);
-    fill: var(--main-color);
-    height: 16px;
+/* HEADER AREA */
+
+#header-container {
+    /* box-sizing: border-box; */
+    box-shadow: 0px 5px 5px var(--shadow-color);
+    padding-left: 50px;
+    padding-bottom: 10px;
+    grid-area: header;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "search user"
+    "user-greeting user-buttons";
 }
 
-ul::marker {
-    fill: var(--main-color);
+#search{
+    /* padding-top: 25px; */
+    grid-area: search;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+
+/* #search>svg {
+    fill: black;
+}
+No longer necessary with the addition of the 'black' class.
+This does change the size of the image,
+from the 33px inherited from svg on line 54
+to the 25px inherited from .black on line 31.
+*/
+
+input {
+    height: 30px;
+    padding: 0px 15px;
+    font-size: large;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--background-color);
+}
+
+input:focus {
+    outline:none;
+}
+
+#user {
+    /* padding-top: 25px; */
+    grid-area: user;
+    grid-template-columns: 1fr 50px 75px 2fr;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+}
+
+#user>img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#user-greeting {
+    grid-area: user-greeting;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "user-greeting-image user-greeting-greeting"
+    "user-greeting-image user-greeting-name";
+}
+
+#user-greeting-image {
+    grid-area: user-greeting-image;
+}
+
+#user-greeting-image>img{
+    height: 90px;
+    border-radius: 50%;
+}
+
+#user-greeting-greeting {
+    grid-area: user-greeting-greeting;
+    font-weight: bold;
+    font-size: large;
+    align-self: center;/* not sure why its align instead of justify */
+
+    /* margin: 15px; this makes the whole header area huge for some reason [not anymore, for some reason]  */
+    /* padding:10px; also messes up header area  [not anymore, for some reason]  */
+}
+
+#user-greeting-name {
+    grid-area: user-greeting-name;
+    font-size: xx-large;
+    font-weight: bold;
+    align-self: center;
+    width: max-content; /* prevents username from wrapping onto another line, which increases the height of the header */
+}
+
+#user-buttons {
+    grid-area: user-buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+button { 
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 22.5px;
+    font-size: large;
+    font-weight: bold;
+    padding: 12px;
+    width: 110px;
+    color: var(--navigation-text-color);
+} 
+
+/* CONTENT AREA */
+
+#content-container {
+    grid-area: content-container;
+    background-color: var(--background-color);
+    grid-template-columns: 3fr 1fr;
+    z-index: -1;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
+/* PROJECT CARD AREA */
+
+#content-left-side {
+    grid-template-rows: 50px 1fr;
+    padding-left: 40px;
+}
+
+#card-container {
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--main-color);
+    font-size: large;
+    height: 250px;
+    width: 420px;
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    border-radius: 10px;
+    border-left: solid 10px var(--edge-color);
+    /* margin: 15px 15px 15px 0px; */
+    /* margin-bottom: 30px; */
+    /* margin-right: 10px; unnecessary b/c of the minimum value in minmax() in #card-container*/ 
+    padding: 25px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px;
+    grid-template-rows: 25px 1fr 35px;
+} 
+
+.project-title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* .card-button>svg {
+    height: 25px;
+    fill: black;
+}
+No longer necessary with the addition of the 'black' class in the javascript.
+*/
+
+/* ANNOUNCEMENT AND TRENDING AREA */
+
+#content-right-side {
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
+
+.side-card {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    margin-right: 20px;
+    padding: 35px 25px 25px 25px;
+    font-size: 0.9rem;
+    /* margin-top: 15px; */
+    /* justify-content: center; */
+
+    /* grid-template-rows: repeat(auto-fit, 1fr); */
+}
+
+.line{
+    border: 1px solid var(--background-color);
+    height: 2px;
+    box-sizing: border-box;
+}
+
+.announcement-title{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.announcement {
+    color: var(--shadow-color);
+}
+
+#trending-card>div{
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 25px 25px;   
+}
+
+.trending-description{
+    color: var(--shadow-color)
 }
