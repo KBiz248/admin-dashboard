@@ -1,34 +1,34 @@
 # admin-dashboard
 
-https://unsplash.com/@gcol
-George C
-creator of user image
-
+Edward Elrick
+image
 https://unsplash.com/photos/a-tree-in-a-field-with-a-full-moon-in-the-background-o0OyMksw65s
-main user image
+image creator: George C.
+https://unsplash.com/@gcol
 
-mustang image creator cullan smith
+mustang
+image
+https://unsplash.com/photos/red-fire-digital-wallpaper-BdTtvBRhOng
+image creator: Cullan Smith
 https://unsplash.com/@cullansmith
 
-https://unsplash.com/photos/red-fire-digital-wallpaper-BdTtvBRhOng
-image
 
 alphonse
 image
 https://unsplash.com/photos/brown-pie-on-brown-wooden-table-SU5jSHu1pK8
-creator priscilla du preez
+creator: Priscilla du Preez
 https://unsplash.com/@priscilladupreez
 
 winry
 image
 https://unsplash.com/photos/stainless-steel-wrench-on-black-surface-YfDYyt-SX8U
-creator Dmitriy Demidov
+image creator: Dmitriy Demidov
 https://unsplash.com/@fotograw
 
 sloth
 image
 https://unsplash.com/photos/water-drop-in-water-in-grayscale-photography-Tf18kgGiop4
-creator omar gattis
+image creator: Omar Gattis
 https://unsplash.com/@sp_studio_10
 
 
