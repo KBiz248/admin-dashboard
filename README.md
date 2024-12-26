@@ -1,6 +1,6 @@
 # admin-dashboard
 
-Edward Elrick
+Edward Elric
 image
 https://unsplash.com/photos/a-tree-in-a-field-with-a-full-moon-in-the-background-o0OyMksw65s
 image creator: George C.
