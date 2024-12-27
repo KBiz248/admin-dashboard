@@ -33,15 +33,23 @@ https://unsplash.com/@sp_studio_10
 
 
 
-<!-- FOR QUESTIONS LATER
+<!-- 
 
-correct semantic usage of h1-h6 and p
-    should announcement titles be h3?
-    should project titles also be h3?
-    should they all be p tags?
-    or is it ok to make them all divs?
+QUESTIONS ABOUT SEMANTICS
+    Should the divs that contain text (titles/descriptions on cards and announcements) be <p> tags instead?
+    Was it appropriate to use <h> tags on "Dashboard", "Your Projects", "Announcements", and "Trending"?
+    Should <h> tags have been used on all of the project titles?
+    (for all of the above questions about semantics) Why or why not?
 
-was I correct to use divs instead of <hr>?
+RANDOM QUESTION
+    Looking at div.line:
+        Would it have been appropriate to use <hr> tags instead?
+        Speaking of <hr> tags: the lines they created went from horizontal to vertical when div#announcement-card was was set to grid. Why is that?
 
-is it ok to use h1 on dashboard?
+MISTAKES WERE MADE AND LESSONS WERE LEARNED
+    I encounted a problem involving line 164 of style.css that stumped me for a while.
+    I figured it out, and the explanation is written on lines 168-177.
+    Other lines of code involved are line 94 and lines 138-143.
+    Feel free to read and learn from my mistakes.
+ 
  -->
