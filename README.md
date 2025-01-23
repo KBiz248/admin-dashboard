@@ -46,6 +46,9 @@ RANDOM QUESTION
         Would it have been appropriate to use <hr> tags instead?
         Speaking of <hr> tags: the lines they created went from horizontal to vertical when div#announcement-card was was set to grid. Why is that?
 
+    Using javascript to add style seemed to create a bit of a lag whe the page was reloaded.
+        Does the use of javascript in this way affect load speed?
+
 QUESTION ABOUT LINKS
     The links on the third card (image credits for Edward Elric) do not work when the page is maximized.
     When the window is resized and the cards are only in one column, then the links work just fine.
