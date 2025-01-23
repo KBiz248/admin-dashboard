@@ -46,6 +46,12 @@ RANDOM QUESTION
         Would it have been appropriate to use <hr> tags instead?
         Speaking of <hr> tags: the lines they created went from horizontal to vertical when div#announcement-card was was set to grid. Why is that?
 
+QUESTION ABOUT LINKS
+    The links on the third card (image credits for Edward Elric) do not work when the page is maximized.
+    When the window is resized and the cards are only in one column, then the links work just fine.
+    Why don't they just work all of the time?
+    What is going on here?
+
 MISTAKES WERE MADE AND LESSONS WERE LEARNED
     I encounted a problem involving line 164 of style.css that stumped me for a while.
     I figured it out, and the explanation is written on lines 168-177.
